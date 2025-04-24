@@ -35,7 +35,7 @@
     --line-height-small: 1.2;
 
     --black: #000;
-    --pink: #ff3258;
+    --cyan: #4cdbff;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
@@ -150,7 +150,7 @@ h2::after {
     display: block;
     height: 2px;
     width: 10rem;
-    background: var(--pink);
+    background: var(--cyan);
     margin: var(--gutter-small) 0;
 }
 
@@ -201,7 +201,7 @@ a {
 
 button:focus,
 a:focus {
-    outline: 2px solid var(--pink);
+    outline: 2px solid var(--cyan);
 }
 
 body:not(.user-is-tabbing) button:focus,
@@ -210,7 +210,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .link:hover {
-    color: var(--pink);
+    color: var(--cyan);
 }
 
 .btn {
