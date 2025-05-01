@@ -18,34 +18,59 @@ $(document).ready(function () {
         nav = $('.navbar-fixed-top,footer'),
         nav_height = nav.outerHeight();
 
-    $(window).on('scroll', function () {
-        var cur_pos = $(this).scrollTop();
-
-        sections.each(function () {
-            var top = $(this).offset().top - nav_height,
-                bottom = top + $(this).outerHeight();
-
-            if (cur_pos >= top && cur_pos <= bottom) {
-                nav.find('a').removeClass('active');
-                sections.removeClass('active');
-
-                $(this).addClass('active');
-                nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
-            }
+        $(window).on('scroll', function () {
+            var cur_pos = $(this).scrollTop();
+            var pageBottom = $(document).height() - $(window).height();
+        
+            sections.each(function (index, section) {
+                var top = $(section).offset().top - nav_height;
+                var bottom = top + $(section).outerHeight();
+        
+                // If we're near the bottom, force the last section active
+                if (cur_pos + 50 >= pageBottom && index === sections.length - 1) {
+                    nav.find('a').removeClass('active');
+                    sections.removeClass('active');
+        
+                    $(section).addClass('active');
+                    nav.find('a[href="#' + $(section).attr('id') + '"]').addClass('active');
+                    return;
+                }
+        
+                if (cur_pos >= top && cur_pos <= bottom) {
+                    nav.find('a').removeClass('active');
+                    sections.removeClass('active');
+        
+                    $(section).addClass('active');
+                    nav.find('a[href="#' + $(section).attr('id') + '"]').addClass('active');
+                }
+            });
         });
+
+nav.find('a').on('click', function () {
+    var $el = $(this),
+        id = $el.attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(id).offset().top - nav_height + 2
+    }, 600);
+
+    // 🔄 Trigger scroll check after animation ends
+    setTimeout(() => $(window).trigger('scroll'), 620);
+
+    return false;
+});
+
+    // Dark/Light Mode Functionality
+    $('#mode-toggle').on('change', function () {
+        $('body').toggleClass('dark-mode');
+        localStorage.setItem('darkMode', $('body').hasClass('dark-mode'));
     });
 
-    nav.find('a').on('click', function () {
-        var $el = $(this),
-            id = $el.attr('href');
-
-        $('html, body').animate({
-            scrollTop: $(id).offset().top - nav_height + 2
-        }, 600);
-
-        return false;
-    });
-
+    // Load saved mode on page load
+    if (localStorage.getItem('darkMode') === 'true') {
+        $('body').addClass('dark-mode');
+        $('#mode-toggle').prop('checked', true);
+    }
 
     // Menu opacity
     if ($(window).scrollTop() > 80) {
