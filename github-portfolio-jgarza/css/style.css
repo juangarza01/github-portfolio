@@ -144,6 +144,18 @@ body {
     -webkit-animation: wink 1s ease-in-out infinite alternate;
     animation: wink 1s ease-in-out infinite alternate
 }
+/* Match social icon size and color */
+.svg-icon img {
+    width: 35px;
+    height: 35px;
+    filter: invert(20%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(95%) contrast(90%);
+    transition: filter 0.3s ease;
+  }
+  
+  /* On hover, apply pink accent like other icons */
+  .svg-icon:hover img {
+    filter: invert(44%) sepia(91%) saturate(2646%) hue-rotate(302deg) brightness(98%) contrast(101%);
+  }
 
 @media only screen and (min-width:768px) {
     .preloader {
