@@ -59,7 +59,20 @@ nav.find('a').on('click', function () {
 
     return false;
 });
-
+// Show scroll cue only if no scroll after 5 seconds
+setTimeout(function () {
+    if (window.scrollY === 0) {
+      document.getElementById('scroll-cue').style.display = 'block';
+    }
+  }, 5000);
+  
+  // Hide cue when user scrolls
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 0) {
+      var cue = document.getElementById('scroll-cue');
+      if (cue) cue.style.display = 'none';
+    }
+  });
     // Dark/Light Mode Functionality
     $('#mode-toggle').on('change', function () {
         $('body').toggleClass('dark-mode');
@@ -137,7 +150,29 @@ nav.find('a').on('click', function () {
         });
 
     });
-
+// Show back-to-top button when scrolled down
+window.addEventListener('scroll', function () {
+    var backToTop = document.getElementById('backToTop');
+    if (window.scrollY > 300) {
+      backToTop.style.display = 'block';
+    } else {
+      backToTop.style.display = 'none';
+    }
+  });
+  // Custom smooth scroll to top (slower)
+document.getElementById('backToTop').addEventListener('click', function (e) {
+    e.preventDefault();
+    let currentPosition = window.scrollY;
+    const scrollSpeed = 100; // smaller = slower
+    const scrollStep = () => {
+      if (currentPosition > 0) {
+        window.scrollTo(0, currentPosition);
+        currentPosition -= scrollSpeed;
+        requestAnimationFrame(scrollStep);
+      }
+    };
+    scrollStep();
+  });
     //animatedModal
     $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
 

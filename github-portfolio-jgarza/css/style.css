@@ -1030,6 +1030,110 @@ body.dark-mode .section {
 
   /* Case study section */
 
+  /* Case study hero section */
+  .case-hero {
+    background-image: url('../img/case-hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0;
+    position: relative;
+  }
+  
+  .case-hero h1 {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .case-hero h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  .case-hero .subtitle {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  
+  .case-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+  
+  .scroll-down {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    font-size: 32px;
+    animation: bounce 2s infinite;
+  }
+  
+  .scroll-down a {
+    color: white;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  /* Rounded Case Study Button */
+.case-btn {
+    background-color: var(--accent-color, #0099cc);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .case-btn:hover {
+    background-color: #0077aa;
+  }
+  
+  /* Scroll Cue Arrow */
+  .scroll-down {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .scroll-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bounce 2s infinite;
+    font-size: 20px;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .scroll-tooltip {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4px 10px;
+    border-radius: 12px;
+    display: inline-block;
+  }
+  
+  /* Bounce animation */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
   /* Section numbers like 01, 02, etc. */
 .section-number {
     font-size: 64px;
@@ -1061,4 +1165,27 @@ body.dark-mode .section {
     .section-number {
       font-size: 42px;
     }
+  }
+  /* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    z-index: 999;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .back-to-top .scroll-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #FF5EAA;
+    background-color: rgba(255, 255, 255, 0.1);
+    color:  #FF5EAA;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
