@@ -45,15 +45,23 @@
   <div class="container">
     <div class="disply-table">
       <div class="table-cell text-center" data-aos="fade-up">
-        <h4>UX/UI Case Study</h4>
-        <h1>TableFinder</h1>
-        <p class="subtitle">
-          A mobile-first reservation tool that brings clarity, speed, and accessibility to your next night out.
-        </p>
-        <a href="https://www.figma.com/proto/your-prototype-link" target="_blank" class="btn btn-primary case-btn">View Prototype</a>
+        <div class="hero-flex">
+          <div class="hero-content text-left" data-aos="fade-up">
+            <h4>UX/UI Case Study</h4>
+            <h1>TableFinder</h1>
+            <p class="subtitle">
+              A mobile-first reservation tool that brings clarity, speed, and accessibility to your next night out.
+            </p>
+            <a href="https://www.figma.com/proto/your-prototype-link" target="_blank" class="btn btn-primary case-btn">View Prototype</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+          <!-- Intro Animation GIF -->
+          <div class="hero-gif-container" id="heroGif">
+            <img src="img/tablefinder-intro.gif" alt="TableFinder animation" class="hero-gif">
+          </div>
 
   <!-- Scroll Cue with Arrow + Tooltip -->
   <a href="#summary" class="scroll-down bounce-trigger" id="scroll-cue" style="display: none;">
@@ -71,45 +79,61 @@
         <div class="col-md-6">
           <span class="section-number">00</span>
           <h2>Executive Summary</h2>
-          <p>TableFinder is a mobile-first restaurant reservation tool designed for everyday users—especially students like myself who are tired of outdated booking systems. Over 6 weeks, I led this solo UX case study from research through testing, building a product that’s quick, intuitive, and accessible. This case study explores how I designed with empathy, iterated fast, and stayed user-first every step of the way.</p>
+          <p>TableFinder is a mobile-first restaurant reservation experience designed for real users—especially students like me who know the pain of clunky booking tools.</p>
+          <p>Over 6 weeks, I took this project from napkin sketches to high-fidelity UI and tested it with real people. From strategy to screen, I focused on speed, clarity, and accessibility—three things my users cared about most.</p>
+          <p>In this case study, I’ll walk through how I uncovered pain points, designed for clarity, and turned a simple booking flow into a delightful experience.</p>
         </div>
-        <div class="col-md-6">
-          <img src="img/tablefinder-summary.png" alt="TableFinder app mockup" class="img-responsive case-img">
+        <div class="col-md-6 text-center">
+          <img src="img/tablefinder-summary.png" alt="Final UI overview of TableFinder mobile app"
+               class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
   </section>
 
-<section class="section" id="context">
-  <div class="container row-section">
-    <div class="row">
-      <div class="col-md-6">
-        <span class="section-number">01</span>
-        <h2>Context</h2>
-        <p>This was a solo UX project for the Google UX Certificate program during my final semester at UTRGV. I worked as researcher, designer, and tester—all hats, one head. The challenge? Improve how people book tables without yelling into a phone or navigating 2002-style websites.</p>
-        <p><strong>Timeline:</strong> 6 weeks | <strong>Platform:</strong> Mobile-first | <strong>Tools:</strong> Figma, Google Forms, Zoom, Pen & Paper</p>
-      </div>
-      <div class="col-md-6">
-        <img src="img/tablefinder-context.png" alt="Context diagram" class="img-responsive case-img">
+  <section class="section alt-light" id="context">
+    <div class="container">
+      <div class="disply-table">
+        <div class="table-cell" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-6">
+              <h2><span class="section-number">01</span> Background & Context</h2>
+              <p>This project was part of my final semester at UTRGV, completed during the Google UX Design Certificate program.</p>
+              <p>It was a 6-week solo sprint where I owned everything—from research and ideation to prototyping and testing. My goal was simple: create a better way to book a table for students and everyday users.</p>
+              <p>The final result? A mobile-first app designed for clarity, speed, and a little joy.</p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="img/tablefinder-context-ui1.png" alt="Final UI overview of TableFinder mobile app"
+                   class="img-fluid section-image section-image-large" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Case Study Sections -->
 
-   <!-- Problem -->
-  <section class="section" id="problem">
-    <div class="container row-section">
+  <section class="section alt-light" id="problem">
+    <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <span class="section-number">02</span>
-          <h2>Problem</h2>
-          <p>Long lines. Clunky websites. Confusing calendars. Sound familiar?</p>
-          <p>People just want to book a table without dealing with confusing flows or outdated interfaces. Most restaurant sites feel like digital mazes—especially for college students, busy parents, or accessibility users. And let’s not even talk about the sites that don’t confirm your reservation until it’s too late.</p>
+          <h2><span class="section-number">02</span> The Problem</h2>
+          <p>
+            Booking a table online should be simple—but for many users, especially students, it’s anything but. 
+            During my initial interviews, I uncovered recurring frustration points with existing reservation apps: 
+            cluttered layouts, unclear CTAs, and inconsistent availability feedback. These issues created confusion and hesitation in committing to a booking.
+          </p>
+          <p>
+            Users often abandoned the process entirely, opting instead to walk in or call. There was a clear need 
+            for a booking experience that felt fast, focused, and friendly.
+          </p>
         </div>
-        <div class="col-md-6">
-          <img src="img/tablefinder-problem.png" alt="Frustration points" class="img-responsive case-img">
+        <div class="col-md-6 text-center">
+          <img src="img/tablefinder-problem-quotes.png" 
+               alt="User journey map highlighting restaurant booking pain points" 
+               class="img-fluid rounded shadow section-image storyboard-img"
+               style="max-width: 90%; height: auto;" />
         </div>
       </div>
     </div>

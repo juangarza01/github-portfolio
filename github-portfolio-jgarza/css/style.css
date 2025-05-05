@@ -261,7 +261,7 @@ nav li {
 nav li a {
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #444;
+    color: #0077aa;
     font-size: 11px;
     font-weight: bold;
 }
@@ -1027,59 +1027,56 @@ body:not(.dark-mode) #projects.alt {
 body.dark-mode .section {
     background-color: #000000;
   }
+  .section {
+    padding: 100px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .section {
+      padding: 60px 0;
+    }
+  }
 
   /* Case study section */
 
   /* Case study hero section */
   .case-hero {
-    background-image: url('../img/case-hero-bg.jpg');
+    background-image: url('../img/tableherobackgroundsaturated.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
     color: white;
     padding: 150px 0;
-    position: relative;
+    z-index: 1;
+    overflow: hidden;
   }
   
-  .case-hero h1 {
-    font-size: 72px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  
-  .case-hero h4 {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-  }
-  
-  .case-hero .subtitle {
-    font-size: 20px;
-    max-width: 700px;
-    margin: 0 auto 30px;
-  }
-  
-  .case-btn {
-    margin-top: 20px;
-    padding: 12px 30px;
-    font-size: 16px;
-  }
-  
-  .scroll-down {
+  /* Dark overlay */
+  .case-hero::before {
+    content: '';
     position: absolute;
-    bottom: 20px;
-    right: 40px;
-    font-size: 32px;
-    animation: bounce 2s infinite;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* darken slightly */
+    z-index: 1;
   }
   
-  .scroll-down a {
-    color: white;
+  /* Saturate and blur behind content */
+  .case-hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 0;
   }
   
-  @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+  /* Text content stays above overlays */
+  .case-hero .disply-table {
+    position: relative;
+    z-index: 2;
   }
   /* Rounded Case Study Button */
 .case-btn {
@@ -1094,6 +1091,41 @@ body.dark-mode .section {
   
   .case-btn:hover {
     background-color: #0077aa;
+  }
+    /* Case Study GIF */
+    .hero-gif-container {
+        position: absolute;
+        right: 120px; /* was 40px – moved left */
+        top: 50%;
+        transform: translateY(-50%) translateY(60px);
+        max-width: 360px; /* was 220px – increased size */
+        opacity: 0;
+        transition: all 0.8s ease-out;
+        z-index: 3;
+      }
+      
+      .hero-gif-container.show {
+        opacity: 1;
+        transform: translateY(-50%) translateY(0);
+      }
+  
+  .hero-gif {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  .hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin-left: 50px;
   }
   
   /* Scroll Cue Arrow */
@@ -1188,4 +1220,38 @@ body.dark-mode .section {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  /* Force consistent nav link color across both themes */
+body.dark-mode nav li a,
+body:not(.dark-mode) nav li a {
+  color: #0077aa !important;
+}
+/* Restore active nav color */
+body nav li a.active {
+    color: #FF5EAA !important;
+  }
+
+  .transparent-img {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+  }
+  .case-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .section-image-large {
+    max-height: 600px;
+    width: auto;
+    margin-top: 20px;
+  }
+  .storyboard-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }

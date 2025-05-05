@@ -173,6 +173,13 @@ document.getElementById('backToTop').addEventListener('click', function (e) {
     };
     scrollStep();
   });
+  // Show intro GIF after 1 second
+window.addEventListener('load', function () {
+    setTimeout(function () {
+      const gif = document.getElementById('heroGif');
+      if (gif) gif.classList.add('show');
+    }, 1000);
+  });
     //animatedModal
     $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
 
