@@ -1,84 +1,152 @@
-<ul class="timeline">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[Project Title] – Juan Garza</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="ionicons/css/ionicons.min.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-  <li class="timeline-event" id="intro" data-aos="fade-up">
-    <label class="timeline-event-icon"></label>
-    <div class="timeline-event-copy">
-      <p class="timeline-event-thumbnail">Introduction</p>
-      <h3>Project Overview</h3>
-      <p>[Brief overview of the project, 3–5 sentences]</p>
+<body>
+  <!-- Header with Nav -->
+  <header class="navbar-fixed-top">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#ideation">Ideation</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#testing">Testing</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#learnings">Learnings</a></li>
+        <li><a href="#next">Next Steps</a></li>
+      </ul>
+
+      <div class="theme-toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="mode-toggle" />
+          <span class="slider">
+            <span class="icon sun">🌞</span>
+            <span class="icon moon">🌙</span>
+          </span>
+        </label>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Title -->
+  <div class="section">
+    <div class="container text-center">
+      <h1 class="size-50">[Project Title]</h1>
+      <p class="subtitle">[Short, engaging subtitle about the project]</p>
     </div>
-  </li>
+  </div>
 
-  <li class="timeline-event" id="problem" data-aos="fade-up">
-    <label class="timeline-event-icon"></label>
-    <div class="timeline-event-copy">
-      <p class="timeline-event-thumbnail">Problem</p>
-      <h3>What was the problem or opportunity?</h3>
-      <p>[Problem explanation]</p>
+  <!-- Timeline-Based Case Study -->
+  <div class="section" id="case-study">
+    <div class="container">
+      <ul class="timeline">
+        <li class="timeline-event" id="intro" data-aos="fade-up">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">Introduction</p>
+            <h3>Project Overview</h3>
+            <p>[Brief overview of the project, 3–5 sentences]</p>
+          </div>
+        </li>
+
+        <li class="timeline-event" id="problem" data-aos="fade-up">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">Problem</p>
+            <h3>What was the problem or opportunity?</h3>
+            <p>[Problem explanation]</p>
+          </div>
+        </li>
+
+        <li class="timeline-event" id="research" data-aos="fade-up">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">Research</p>
+            <h3>Methods and Key Findings</h3>
+            <p>[UX research methods and what you learned]</p>
+          </div>
+        </li>
+
+        <li class="timeline-event" id="ideation" data-aos="fade-up">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">Ideation</p>
+            <h3>Brainstorming and Concepts</h3>
+            <p>[Sketches, early ideas, storyboards]</p>
+          </div>
+        </li>
+
+        <li class="timeline-event" id="design" data-aos="fade-up">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">Design</p>
+            <h3>High-Fidelity Designs</h3>
+            <p>[Screenshots, UI decisions, rationale]</p>
+          </div>
+        </li>
+
+        <li class="timeline-event" id="testing" data-aos="fade-up">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">Testing</p>
+            <h3>Usability Testing</h3>
+            <p>[Testing process, what changed from feedback]</p>
+          </div>
+        </li>
+
+        <li class="timeline-event" id="impact" data-aos="fade-up">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">Impact & Results</p>
+            <h3>Performance and Metrics</h3>
+            <p>[Results, analytics, what was achieved]</p>
+          </div>
+        </li>
+
+        <li class="timeline-event" id="learnings" data-aos="fade-up">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">Key Learnings</p>
+            <h3>Lessons from the Project</h3>
+            <p>[What you learned and what you'll take forward]</p>
+          </div>
+        </li>
+
+        <li class="timeline-event" id="next" data-aos="fade-up">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">Next Steps</p>
+            <h3>Looking Forward</h3>
+            <p>[Optional ideas or enhancements for the future]</p>
+          </div>
+        </li>
+      </ul>
     </div>
-  </li>
+  </div>
 
-  <li class="timeline-event" id="research" data-aos="fade-up">
-    <label class="timeline-event-icon"></label>
-    <div class="timeline-event-copy">
-      <p class="timeline-event-thumbnail">Research</p>
-      <h3>Methods and Key Findings</h3>
-      <p>[Description of UX research methods and insights]</p>
-    </div>
-  </li>
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>© 2025 – Juan Garza</p>
+  </footer>
 
-  <li class="timeline-event" id="ideation" data-aos="fade-up">
-    <label class="timeline-event-icon"></label>
-    <div class="timeline-event-copy">
-      <p class="timeline-event-thumbnail">Ideation</p>
-      <h3>Brainstorming and Early Concepts</h3>
-      <p>[Sketches, ideas, concepts]</p>
-    </div>
-  </li>
-
-  <li class="timeline-event" id="design" data-aos="fade-up">
-    <label class="timeline-event-icon"></label>
-    <div class="timeline-event-copy">
-      <p class="timeline-event-thumbnail">Design</p>
-      <h3>High-Fidelity Designs</h3>
-      <p>[What was designed and why]</p>
-    </div>
-  </li>
-
-  <li class="timeline-event" id="testing" data-aos="fade-up">
-    <label class="timeline-event-icon"></label>
-    <div class="timeline-event-copy">
-      <p class="timeline-event-thumbnail">Testing</p>
-      <h3>Usability Testing</h3>
-      <p>[What you tested and what changed]</p>
-    </div>
-  </li>
-
-  <li class="timeline-event" id="impact" data-aos="fade-up">
-    <label class="timeline-event-icon"></label>
-    <div class="timeline-event-copy">
-      <p class="timeline-event-thumbnail">Impact & Results</p>
-      <h3>Results & Metrics</h3>
-      <p>[What happened post-launch]</p>
-    </div>
-  </li>
-
-  <li class="timeline-event" id="learnings" data-aos="fade-up">
-    <label class="timeline-event-icon"></label>
-    <div class="timeline-event-copy">
-      <p class="timeline-event-thumbnail">Key Learnings</p>
-      <h3>What I Learned</h3>
-      <p>[Key takeaways, challenges]</p>
-    </div>
-  </li>
-
-  <li class="timeline-event" id="next" data-aos="fade-up">
-    <label class="timeline-event-icon"></label>
-    <div class="timeline-event-copy">
-      <p class="timeline-event-thumbnail">Next Steps</p>
-      <h3>Looking Forward</h3>
-      <p>[Ideas for future improvements]</p>
-    </div>
-  </li>
-
-</ul>
+  <!-- Scripts -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>
