@@ -85,8 +85,18 @@ nav.find('a').on('click', function () {
             $(".navbar-fixed-top").removeClass("bg-nav");
         }
     });
+    // Alternate .section backgrounds across all pages
+    $('.section').each(function (index) {
+        if (index % 2 !== 0) {
+        $(this).addClass('alt');
+        }
+    });
 
-
+    $('.section').each(function (index) {
+        if (index % 2 !== 0) {
+          $(this).addClass('alt');
+        }
+      });
 
     // Parallax
     var parallax = function () {

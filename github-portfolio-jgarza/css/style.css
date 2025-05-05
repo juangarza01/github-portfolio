@@ -979,3 +979,86 @@ body.dark-mode nav {
   nav {
     transition: background-color 0.4s ease, border-color 0.4s ease;
   }
+  /* Fix hardcoded background in dark mode */
+body:not(.dark-mode) #projects {
+    background-color: #ffffff;
+  }
+  
+  body.dark-mode #projects {
+    background-color: #000000;
+  }
+
+    /* light mode alternate color sections */   /* Light mode: alternate section background colors */
+body:not(.dark-mode) .section:nth-of-type(even):not(#projects):not(#contact) {
+    background-color: #f5f5f5;
+  }
+  /* Light mode: default section background */
+body:not(.dark-mode) .section {
+    background-color: #ffffff;
+  }
+  
+/* Light mode base section color */
+body:not(.dark-mode) .section {
+    background-color: #ffffff;
+  }
+  
+  /* Light mode alternate section background with stronger contrast */
+  body:not(.dark-mode) .section.alt {
+    background-color: #eaeaea;
+  }
+  
+  body.dark-mode .section.alt {
+    background-color: #111;
+  }
+  /* Ensure default white for all non-alt sections in light mode */
+body:not(.dark-mode) #about,
+body:not(.dark-mode) #experience,
+body:not(.dark-mode) #projects,
+body:not(.dark-mode) #contact {
+  background-color: #ffffff;
+}
+
+/* Alternate sections with clearer gray for better contrast */
+body:not(.dark-mode) #experience.alt,
+body:not(.dark-mode) #projects.alt {
+  background-color: #eaeaea;
+}
+/* Match dark mode alternation to index.html */
+body.dark-mode .section {
+    background-color: #000000;
+  }
+
+  /* Case study section */
+
+  /* Section numbers like 01, 02, etc. */
+.section-number {
+    font-size: 64px;
+    font-weight: bold;
+    color: var(--accent-color, #0099cc); /* fallback to your main accent */
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Side-by-side layout with spacing */
+  .row-section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  
+  .case-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .row-section .col-md-6 {
+      margin-bottom: 30px;
+    }
+  
+    .section-number {
+      font-size: 42px;
+    }
+  }
