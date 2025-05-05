@@ -288,6 +288,10 @@ a:hover {
 a.active {
     color: #FF5EAA;
 }
+/* Add space below fixed navbar so title isn't covered */
+.section:first-of-type {
+    padding-top: 120px;
+  }
 
 
 /* home section
