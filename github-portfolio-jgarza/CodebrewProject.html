@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TableFinder – Juan Garza</title>
+  <title>Codebrew Cafe – Juan Garza</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="ionicons/css/ionicons.min.css" />
   <link rel="stylesheet" href="css/animate.min.css" />
@@ -23,6 +23,7 @@
         <li><a href="#objectives">Objectives</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#design">Design</a></li>
+        <li><a href="#testing">Testing</a></li>
         <li><a href="#results">Results</a></li>
         <li><a href="#reflection">Reflection</a></li>
       </ul>
@@ -48,11 +49,11 @@
         <div class="hero-flex">
           <div class="hero-content text-left" data-aos="fade-up">
             <h4>UX/UI Case Study</h4>
-            <h1>CodeBrew Cafe</h1>
+            <h1>Codebrew Cafe</h1>
             <p class="subtitle">
-              A mobile-first reservation tool that brings clarity, speed, and accessibility to your next night out.
+              A centralized, affordable coding tutorial hub designed for students — built with empathy, refined through iteration.
             </p>
-            <a href="https://www.figma.com/proto/your-prototype-link" target="_blank" class="btn btn-primary case-btn">View Prototype</a>
+            <a href="https://xd.adobe.com/view/92c016f0-7d02-407f-be10-fd5380bbb434-c793/screen/7447494a-fdf9-4b62-a6cc-ad35f39f97a8?fullscreenv" target="_blank" class="btn btn-primary case-btn">View Prototype</a>
           </div>
         </div>
       </div>
@@ -60,7 +61,7 @@
   </div>
           <!-- Intro Animation GIF -->
           <div class="hero-gif-container" id="heroGif">
-            <img src="img/tablefinder-intro.gif" alt="TableFinder animation" class="hero-gif">
+            <img src="img/codebrewcafe.gif" alt="TableFinder animation" class="hero-gif">
           </div>
 
   <!-- Scroll Cue with Arrow + Tooltip -->
@@ -79,85 +80,117 @@
         <div class="col-md-6">
           <span class="section-number">00</span>
           <h2>Executive Summary</h2>
-          <p>TableFinder is a mobile-first restaurant reservation tool designed for everyday users—especially students like myself who are tired of outdated booking systems. Over 6 weeks, I led this solo UX case study from research through testing, building a product that’s quick, intuitive, and accessible. This case study explores how I designed with empathy, iterated fast, and stayed user-first every step of the way.</p>
+          <p>CodeBrew Café is a mobile-first, student-centered platform for affordable and accessible coding tutorials. Think Spotify for dev learning — intuitive, scrollable, and tailored to what students actually need.</p>
+          <p>This project was built over 6 weeks during my final semester, from concept through testing. I conducted user interviews, designed the interface, and prototyped it in Figma — every pixel shaped by real student voices.</p>
+          <p>In this case study, you’ll see how I turned research into real features, sketches into scrollable screens, and feedback into an experience that’s as accessible as it is inviting.</p>
         </div>
-        <div class="col-md-6">
-          <img src="img/tablefinder-summary.png" alt="TableFinder app mockup" class="img-responsive case-img">
+        <div class="col-md-6 text-center">
+          <img src="img/codebrewcafe-summary.png" alt="Overview of CodeBrew Café mobile UI"
+               class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
   </section>
 
-<section class="section" id="context">
-  <div class="container row-section">
-    <div class="row">
-      <div class="col-md-6">
-        <span class="section-number">01</span>
-        <h2>Context</h2>
-        <p>This was a solo UX project for the Google UX Certificate program during my final semester at UTRGV. I worked as researcher, designer, and tester—all hats, one head. The challenge? Improve how people book tables without yelling into a phone or navigating 2002-style websites.</p>
-        <p><strong>Timeline:</strong> 6 weeks | <strong>Platform:</strong> Mobile-first | <strong>Tools:</strong> Figma, Google Forms, Zoom, Pen & Paper</p>
-      </div>
-      <div class="col-md-6">
-        <img src="img/tablefinder-context.png" alt="Context diagram" class="img-responsive case-img">
+  <section class="section alt-light" id="context">
+    <div class="container">
+      <div class="disply-table">
+        <div class="table-cell" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-6">
+              <h2><span class="section-number">01</span> Background & Context</h2>
+              <p>This project was part of my Google UX Design Certificate. I was given the prompt to design a platform that helps people find coding tutorials — a space I personally struggled with as a student.</p>
+              <p>Over a 5-week solo sprint, I explored how underserved learners, particularly students and beginners, access and evaluate coding resources. I wanted to build something more centralized, inclusive, and actually helpful.</p>
+              <p>What started as a passion project evolved into Codebrew Café — a focused platform for affordable, high-quality tutorials made with empathy.</p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="img/codebrew-background.png"
+                   alt="Mac mockup of Codebrew Café homepage"
+                   class="img-fluid section-image section-image-large" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Case Study Sections -->
-
-   <!-- Problem -->
-  <section class="section" id="problem">
-    <div class="container row-section">
-      <div class="row">
+  <!-- Problem -->
+  <section class="section alt-light" id="problem">
+    <div class="container">
+      <div class="row align-items-center">
         <div class="col-md-6">
-          <span class="section-number">02</span>
-          <h2>Problem</h2>
-          <p>Long lines. Clunky websites. Confusing calendars. Sound familiar?</p>
-          <p>People just want to book a table without dealing with confusing flows or outdated interfaces. Most restaurant sites feel like digital mazes—especially for college students, busy parents, or accessibility users. And let’s not even talk about the sites that don’t confirm your reservation until it’s too late.</p>
+          <h2><span class="section-number">02</span> The Problem</h2>
+          <p>
+            Booking a table online should be simple—but for many users, especially students, it’s anything but. 
+            During my initial interviews, I uncovered recurring frustration points with existing reservation apps: 
+            cluttered layouts, unclear CTAs, and inconsistent availability feedback. These issues created confusion 
+            and hesitation in committing to a booking.
+          </p>
+          <p>
+            Users often abandoned the process entirely, opting instead to walk in or call. 
+            There was a clear need for a booking experience that felt fast, focused, and friendly.
+          </p>
         </div>
-        <div class="col-md-6">
-          <img src="img/tablefinder-problem.png" alt="Frustration points" class="img-responsive case-img">
+        <div class="col-md-6 text-center">
+          <img src="img/tablefinder-edwin-storyboard.png"
+               alt="User journey map highlighting restaurant booking pain points"
+               class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
   </section>
-
   <!-- Objectives -->
-  <section class="section" id="objectives">
-    <div class="container row-section">
-      <div class="row">
+  <section class="section alt-light" id="objectives">
+    <div class="container">
+      <div class="row align-items-center">
         <div class="col-md-6">
           <span class="section-number">03</span>
           <h2>Objectives</h2>
-          <p><strong>User Goals:</strong></p>
+          <h4>User Goals:</h4>
           <ul>
-            <li>Quickly find and book a table near them</li>
-            <li>Clearly see reservation details and status</li>
-            <li>Edit a reservation without starting over</li>
+            <li>Quickly find restaurants that match personal preferences</li>
+            <li>Reserve a table easily with minimal steps</li>
+            <li>Receive clear confirmation and availability details</li>
           </ul>
-          <p><strong>Success Criteria:</strong> Positive user testing feedback, streamlined flows, and reduced confusion around reservations.</p>
+          <h4>Project Goals:</h4>
+          <ul>
+            <li>Simplify the reservation process for mobile users</li>
+            <li>Improve visual clarity and accessibility in UI</li>
+            <li>Deliver an intuitive and delightful experience</li>
+          </ul>
         </div>
-        <div class="col-md-6">
-          <img src="img/tablefinder-objectives.png" alt="Project goals" class="img-responsive case-img">
+        <div class="col-md-6 text-center">
+          <img src="img/tablefinder-objectives.png" 
+               alt="User quotes and feedback from early research" 
+               class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
   </section>
 
   <!-- Research -->
-  <section class="section" id="research">
-    <div class="container row-section">
+  <section class="section alt-light" id="research">
+    <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <span class="section-number">04</span>
-          <h2>Research</h2>
-          <p>I started by analyzing OpenTable and Olive Garden’s sites. They looked fine—but felt stiff, outdated, and not built for modern mobile users.</p>
-          <p>Then I talked to real users: 5 students from tech and science fields. They told me calendars were confusing, confirmations weren’t trustworthy, and most apps didn’t feel friendly or helpful.</p>
-          <p><strong>Key Themes:</strong> Clarity, editability, and trust. Nobody wants to “hope” their booking went through.</p>
+          <h2><span class="section-number">04</span> Discovery</h2>
+          <p>
+            To get a better understanding of what users needed in a booking tool, I conducted qualitative interviews with students and working professionals. 
+            I asked about their past experiences booking online and what they wished could be better.
+          </p>
+          <p>
+            A common thread? Frustration with unclear reservation processes, bad layouts, and inconsistent feedback. 
+            People just wanted something clean and fast. These insights shaped my early thinking.
+          </p>
         </div>
-        <div class="col-md-6">
-          <img src="img/tablefinder-research.png" alt="User research" class="img-responsive case-img">
+        <div class="col-md-6 text-center">
+          <img src="img/tablefinder-persona.png"
+               alt="User journey map highlighting restaurant booking pain points"
+               class="img-fluid section-image section-image-large" />
+          <img src="img/tablefinder-affinitymap.png"
+               alt="User journey map highlighting restaurant booking pain points"
+               class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
@@ -179,52 +212,113 @@
           </ul>
           <p>All built and tested in Figma. All user-approved.</p>
         </div>
-        <div class="col-md-6">
-          <img src="img/tablefinder-design.png" alt="Design and testing screens" class="img-responsive case-img">
+        <div class="col-md-6 text-center">
+          <img src="img/tablefinder-3mainflows.png"
+               alt="User journey map highlighting restaurant booking pain points"
+               class="img-fluid section-image section-image-large" />
+          <img src="img/tablefinder-goals.png"
+               alt="User journey map highlighting restaurant booking pain points"
+               class="img-fluid section-image section-image-large" />
+          <img src="img/tablefinder-sketches.png"
+               alt="User journey map highlighting restaurant booking pain points"
+               class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
   </section>
 
+  <!-- testing -->
+  <section class="section" id="testing">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2><span class="section-number">06</span> Testing</h2>
+          <p>
+            I conducted usability testing with classmates and friends to uncover friction points in the booking flow.
+            Testers appreciated the clean layout and quick navigation, but some struggled to find the confirmation screen.
+          </p>
+          <p>
+            Based on their feedback, I improved button visibility, clarified page transitions, and added microinteractions to confirm actions.
+            This iterative cycle helped refine both the functionality and the visual language of the app.
+          </p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="img/tablefinder-testing1.png"
+               alt="User journey map highlighting restaurant booking pain points"
+               class="img-fluid section-image section-image-large" />
+          <img src="img/tablefinder-testing2.png"
+               alt="User journey map highlighting restaurant booking pain points"
+               class="img-fluid section-image section-image-large" />
+          <img src="img/tablefinder-testing3.png"
+               alt="User journey map highlighting restaurant booking pain points"
+               class="img-fluid section-image section-image-large" />
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Results -->
-  <section class="section" id="results">
-    <div class="container row-section">
+  <section class="section alt-light" id="results">
+    <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <span class="section-number">06</span>
-          <h2>Results</h2>
-          <p>Testers loved it.</p>
-          <p>One called it “the smoothest experience I’ve had for restaurant reservations.” They especially loved:</p>
-          <ul>
-            <li>Quick Book functionality</li>
-            <li>Editable reservation flows</li>
-            <li>Mobile-friendly design (with real contrast!)</li>
-          </ul>
-          <p>Couldn’t ask for a better response after 6 weeks of hands-on UX work.</p>
+          <h2 class="section-title"><span class="section-number">07</span> Results</h2>
+          <p>
+            The TableFinder prototype received overwhelmingly positive feedback during user testing sessions.
+            Participants noted the app’s speed, simplicity, and aesthetic polish compared to other tools they'd used.
+          </p>
+          <p>
+            Users were able to complete reservation tasks faster and with fewer mistakes. Several testers said they’d
+            “actually use this” in real life — a phrase that became a validation checkpoint in the design process.
+          </p>
+          <p>
+            Though the project didn’t go into production, the case study has helped me showcase end-to-end thinking,
+            clear problem solving, and user-centered execution — leading to interview invitations and portfolio interest.
+          </p>
         </div>
-        <div class="col-md-6">
-          <img src="img/tablefinder-results.png" alt="User feedback" class="img-responsive case-img">
+        <div class="col-md-6 text-center">
+          <img src="img/Presentation-1.gif"
+               alt="Quick reservations GIF demo"
+               class="img-fluid section-image gif-image" />
+        
+          <img src="img/Presentation-2.gif"
+               alt="Improved booking flow animation"
+               class="img-fluid section-image gif-image" />
+        
+          <img src="img/Presentation-3.gif"
+               alt="Confirmation screen feedback loop"
+               class="img-fluid section-image gif-image" />
+        
+          <img src="img/Presentation-4.gif"
+               alt="Final usability improvements shown"
+               class="img-fluid section-image gif-image" />
         </div>
       </div>
     </div>
-  </section>
 
-  <section class="section" id="reflection">
-    <div class="container row-section">
-      <div class="row">
-        <div class="col-md-6">
-          <span class="section-number">07</span>
-          <h2>Reflection & Next Steps</h2>
-          <p>This project wasn’t just about designing a better app—it was about learning how to listen better, iterate faster, and stay grounded in user needs.</p>
-          <p>If I kept going, I’d explore real-time seating data, smarter restaurant search, and full accessibility audits.</p>
-          <p>But more than anything, this project taught me how to design for clarity, not just clicks.</p>
-        </div>
-        <div class="col-md-6">
-          <img src="img/tablefinder-reflection.png" alt="Future improvements" class="img-responsive case-img">
-        </div>
+<!-- Reflection -->
+<section class="section alt-light" id="reflection">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Text Column -->
+      <div class="col-md-6">
+        <span class="section-number">08</span>
+        <h2>Reflection</h2>
+        <p>This project taught me more than just UX process — it sharpened my ability to step into users’ shoes, simplify complex flows, and communicate ideas clearly across mediums.</p>
+        <p>Working solo from discovery to prototype challenged my time management and decision-making, but also gave me full ownership of my process. I embraced fast iteration, trusted the data, and learned to prioritize clarity over complexity.</p>
+        <p>Next time, I’d like to incorporate more rounds of usability testing and bring in stakeholders earlier. Still, TableFinder represents my evolution from designer-in-training to confident problem-solver.</p>
+      </div> <!-- ✅ Close the text column here -->
+
+      <!-- Image Column -->
+      <div class="col-md-6 text-center">
+        <img src="img/tablefinder-reflection.png"
+             alt="Reflection mockups and summary"
+             class="img-fluid section-image section-image-large" />
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="text-center">
