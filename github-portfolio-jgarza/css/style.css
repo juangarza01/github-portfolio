@@ -286,7 +286,7 @@ a:hover {
 }
 
 a.active {
-    color: #FF5EAA;
+    color: #CC3300;
 }
 /* Add space below fixed navbar so title isn't covered */
 .section:first-of-type {
@@ -397,7 +397,7 @@ a.active {
 }
 
 .timeline-event:hover .timeline-event-thumbnail {
-    box-shadow: inset 40em 0 0 0 #FF5EAA;
+    box-shadow: inset 40em 0 0 0 #CC3300;
 }
 
 .timeline-event-copy {
@@ -495,7 +495,7 @@ a.active {
 }
 
 .portfolio .categories-grid .categories ul li a.active {
-    background-color: #FF5EAA;
+    background-color: #CC3300;
     padding: 0px 20px;
     color: white;
     text-decoration: none;
@@ -723,11 +723,11 @@ fieldset {
 }
 
 #success p {
-    color: #FF5EAA;
+    color: #CC3300;
     font-size: 15px;
     text-align: center;
     padding: 10px;
-    border: 2px solid #FF5EAA;
+    border: 2px solid #CC3300;
     margin-top: 10px;
 }
 
@@ -750,7 +750,7 @@ fieldset {
     font-weight: bold;
     width: 100%;
     &:hover {
-        background-color: #FF5EAA;
+        background-color: #CC3300;
     }
 
 }
@@ -774,7 +774,7 @@ fieldset {
 }
 
 .social li a:hover {
-    color: #FF5EAA;
+    color: #CC3300;
 }
 
 
@@ -863,7 +863,7 @@ fieldset {
   }
   
   input:checked + .slider {
-    background-color: #FF5EAA;
+    background-color: #CC3300;
     color: #000;
   }
   
@@ -929,7 +929,7 @@ body.dark-mode {
   }
   
   body.dark-mode .portfolio_item_hover {
-    background-color: #FF5EAA; /* pink accent */
+    background-color: #CC3300; /* pink accent */
     color: #fff;
     body.dark-mode #projects,
     body.dark-mode .portfolio .categories-grid {
@@ -958,7 +958,7 @@ body.dark-mode .main-container {
 /* Dark mode nav link active and hover */
 body.dark-mode nav li a:hover,
 body.dark-mode nav li a.active {
-  color: #FF5EAA;
+  color: #CC3300;
 }
 body.dark-mode .timeline-event-icon {
     outline: 10px solid #1a1a1a; /* Matches dark background */
@@ -1235,9 +1235,9 @@ body.dark-mode .section {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border: 2px solid #FF5EAA;
+    border: 2px solid #CC3300;
     background-color: rgba(255, 255, 255, 0.1);
-    color:  #FF5EAA;
+    color:  #CC3300;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -1250,7 +1250,7 @@ body:not(.dark-mode) nav li a {
 }
 /* Restore active nav color */
 body nav li a.active {
-    color: #FF5EAA !important;
+    color: #CC3300 !important;
   }
 
   .transparent-img {
