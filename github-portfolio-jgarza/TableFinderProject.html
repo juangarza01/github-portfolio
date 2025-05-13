@@ -69,17 +69,17 @@
     <h2>📌 Project Overview</h2>
     <div class="row align-items-center">
       <div class="col-md-6">
-        <p><strong>Project:</strong> TableFinder — a responsive mobile-first reservation tool for students and small restaurants, designed to bring speed, clarity, and inclusivity to dining out.</p>
-        <p><strong>Timeline:</strong> 6 weeks | <strong>Role:</strong> Solo UX Designer | <strong>Tools:</strong> Figma, Notion, Google Docs</p>
+        <p><strong>Project:</strong> Confidential internal tool — a design initiative at Amazon to streamline enterprise workflows through UX improvements and data clarity.</p>
+        <p><strong>Timeline:</strong> 10 weeks | <strong>Role:</strong> UX Design Intern | <strong>Tools:</strong> Figma, Chime, Jira, Quip</p>
         <p>
-          This project started with a realization: popular restaurant apps were frustrating to use. Between clunky interfaces and unclear table availability, students like myself felt overlooked. TableFinder was my response — a streamlined app focused on fast reservations, simplified flows, and accessibility from both the diner and restaurant perspective.
+          During my internship at Amazon, I worked under NDA on an internal workflow redesign initiative. While specifics are confidential, I can share my UX process and key takeaways. I led user research across 3 workflows, built high-fidelity prototypes, and tested with internal users. 
         </p>
         <p>
-          In this case study, I’ll walk through how I interviewed users, mapped out real-world gaps, and created an experience that feels effortless for diners and powerful for restaurant hosts.
+          This case study highlights my approach to problem-solving in high-stakes enterprise environments — where I combined stakeholder collaboration, accessibility improvements, and scalable design solutions to improve usability and efficiency.
         </p>
       </div>
       <div class="col-md-6 text-center">
-        <img src="img/tablefinder-overview.png" alt="TableFinder UI preview" class="img-fluid section-image section-image-large" />
+        <img src="img/amazon-overview.png" alt="Amazon internal project preview (redacted visuals)" class="img-fluid section-image section-image-large" />
       </div>
     </div>
   </div>
@@ -90,53 +90,38 @@
   <div class="container">
     <h2>📊 Research Area</h2>
 
-    <!-- Competitive Audit -->
+    <!-- Stakeholder Interviews -->
     <div class="subsection row-section">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <h3>Competitive Audit</h3>
+          <h3>Stakeholder Interviews</h3>
           <p>
-            I examined apps like OpenTable, Resy, Yelp Reservations, and Google Maps. While they had strong filtering tools or list-based views, all had pain points: clunky flows, hard-to-read UI, and limited accessibility options. For users like students on-the-go or small restaurant owners with no tech support, these apps weren’t cutting it.
+            I conducted interviews with 4 internal stakeholders across different teams to uncover usability concerns with the current enterprise tools. Each conversation highlighted inefficiencies in cross-functional communication, manual tracking workflows, and poor task visibility.
           </p>
           <p>
-            I wanted to build an interface that prioritized clarity, speed, and control — without compromising accessibility.
+            These insights formed the foundation for mapping the problem space and prioritizing design decisions around discoverability, speed, and workflow clarity.
           </p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="img/tablefinder-competitiveaudit.png" alt="Comparison of competitors like OpenTable and Resy" class="img-fluid section-image section-image-large" />
+          <img src="img/amazon-stakeholders.png" alt="Interview summary with internal Amazon teams" class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
 
-    <!-- User Interviews -->
+    <!-- Workflow Mapping -->
     <div class="subsection row-section">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <h3>User Interviews</h3>
+          <h3>Workflow Mapping</h3>
           <p>
-            I spoke with 5 people — 3 students who often dine out, and 2 small restaurant managers. I asked them to describe their booking experiences, frustrations, and wishlists. Most found apps too complicated or time-consuming. One even said, “I usually just walk in or call because the app makes me feel lost.”
+            I analyzed 3 core workflows used by internal operations teams, diagramming each interaction step. Pain points included repetitive status checks, disconnected tools, and lack of transparency on ownership or task priority.
           </p>
           <p>
-            From these interviews, 3 main themes emerged: users wanted a faster way to find tables, clarity in availability, and the ability to book with confidence.
-          </p>
-        </div>
-        <div class="col-md-6 text-center">
-          <img src="img/tablefinder-userinterviews.png" alt="Screens from interview data and quotes" class="img-fluid section-image section-image-large" />
-        </div>
-      </div>
-    </div>
-
-    <!-- Personas -->
-    <div class="subsection row-section">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h3>Personas</h3>
-          <p>
-            Two personas shaped my design: Daniel, a student who needs fast bookings on a budget, and Maria, a restaurant owner seeking easy guest tracking without complex dashboards. Their behaviors and goals anchored every UI decision, ensuring balance between simplicity and functionality.
+            Mapping these flows helped me identify opportunities for UI consolidation, better labeling, and automation triggers.
           </p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="img/tablefinder-personas.png" alt="User personas for Daniel and Maria" class="img-fluid section-image section-image-large" />
+          <img src="img/amazon-workflows.png" alt="Workflow diagram of internal enterprise process" class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
@@ -145,9 +130,9 @@
     <div class="subsection">
       <h3>Key Themes</h3>
       <ul>
-        <li><strong>Speed:</strong> Every user expected to book a table in under 60 seconds.</li>
-        <li><strong>Clarity:</strong> They wanted upfront availability and easy-to-undo actions.</li>
-        <li><strong>Trust:</strong> Simple confirmations, fallback options, and mobile-optimized views built user confidence.</li>
+        <li><strong>Visibility:</strong> Users struggled to find key task data without navigating multiple tools.</li>
+        <li><strong>Speed:</strong> Manual processes delayed communication and slowed decision-making.</li>
+        <li><strong>Confidence:</strong> Participants lacked clarity on who owned what and when updates were expected.</li>
       </ul>
     </div>
 
@@ -165,16 +150,16 @@
         <div class="col-md-6">
           <h3>Design Principles</h3>
           <p>
-            From the start, I knew TableFinder had to be fast, mobile-first, and inclusive. I set three principles:
+            I framed three core principles to guide every decision:
           </p>
           <ul>
-            <li><strong>Speed-First:</strong> Users should be able to view open tables and book within seconds — with no distractions.</li>
-            <li><strong>Minimalist Navigation:</strong> Focused flows that remove choice overload and streamline reservations.</li>
-            <li><strong>Accessible Clarity:</strong> Use of strong color contrast, legible type, and clear states for all modes and users.</li>
+            <li><strong>Reduce Friction:</strong> Streamline repetitive actions with automation and clear pathways.</li>
+            <li><strong>Clarity First:</strong> Prioritize hierarchy and legibility to improve cross-functional task visibility.</li>
+            <li><strong>Empower Ownership:</strong> Provide role-based views that support timely decisions and accountability.</li>
           </ul>
         </div>
         <div class="col-md-6 text-center">
-          <img src="img/tablefinder-principles.png" alt="Design principles and UI foundation" class="img-fluid section-image section-image-large" />
+          <img src="img/amazon-principles.png" alt="Design principles for internal Amazon project" class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
@@ -185,80 +170,77 @@
         <div class="col-md-6">
           <h3>User Flows</h3>
           <p>
-            I sketched primary flows around three key needs:
+            I developed optimized flows for three roles: operators, analysts, and team leads. Each flow aimed to minimize steps between task discovery and resolution, while enhancing role-specific visibility.
           </p>
           <ul>
-            <li><strong>Find a Table:</strong> Input time/date → see options → book.</li>
-            <li><strong>Repeat Booking:</strong> Re-book favorites with a single tap.</li>
-            <li><strong>Host View:</strong> Hosts get a streamlined dashboard to see availability and edit reservations in real-time.</li>
+            <li><strong>Operators:</strong> Quick task execution and submission confirmation</li>
+            <li><strong>Analysts:</strong> Filter-heavy dashboards for scanning patterns and tagging priorities</li>
+            <li><strong>Team Leads:</strong> Oversight view with escalation flags and historical insights</li>
           </ul>
-          <p>
-            Every flow reduced steps while increasing clarity — especially for mobile users with limited screen space.
-          </p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="img/tablefinder-userflows.png" alt="User flow diagrams for booking and host tools" class="img-fluid section-image section-image-large" />
+          <img src="img/amazon-userflows.png" alt="User flows for operators, analysts, and leads" class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
 
-    <!-- Sketches & Wireframes -->
+    <!-- Wireframes & Explorations -->
     <div class="subsection row-section">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <h3>Sketches & Wireframes</h3>
+          <h3>Wireframes & Explorations</h3>
           <p>
-            I began with sketches focused on interaction speed — removing non-essentials and simplifying the table selection view. Early wireframes leaned on modular components for mobile optimization, like tappable cards and grid selectors.
+            I began with grayscale layouts that prioritized information density and modularity. I explored different ways to surface next steps, show real-time task ownership, and reduce scan time.
           </p>
           <p>
-            These layouts made information easier to scan and helped guide attention where it mattered most.
+            These explorations led to a responsive panel-based layout that emphasized vertical reading flow, repeat patterns, and collapsible metadata.
           </p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="img/tablefinder-wireframes.png" alt="Sketches and low-fidelity wireframes" class="img-fluid section-image section-image-large" />
+          <img src="img/amazon-wireframes.png" alt="Low-fidelity wireframes and layout explorations" class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
 
-    <!-- Final UI Decisions -->
+    <!-- High-Fidelity UI -->
     <div class="subsection row-section">
       <div class="row align-items-center">
         <div class="col-md-6">
           <h3>High-Fidelity UI</h3>
           <p>
-            I refined the interface with color-coded statuses, large CTA buttons, and a card-based layout for hosts. Elements like animated checkmarks, subtle microcopy, and tap-friendly UI affordances enhanced the experience without clutter.
+            I polished the final interface with Amazon’s design system and accessible interaction patterns. Dark mode support, clear status indicators, and bulk-action feedback helped streamline team operations.
           </p>
           <p>
-            The result? A polished product that’s intuitive for diners and operationally helpful for hosts — day or night, in any lighting mode.
+            Custom filtering, inline guidance, and visible progress states gave users more control — and fewer chances to feel lost in the system.
           </p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="img/tablefinder-finalui.png" alt="Final high-fidelity mockups" class="img-fluid section-image section-image-large" />
+          <img src="img/amazon-finalui.png" alt="Final Amazon UI screens" class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
 
   </div>
 </section>
- <!-- Testing & Feedback -->
+<!-- Testing & Feedback -->
 <section class="section alt-light" id="testing">
   <div class="container">
     <h2>🧪 Testing & Feedback</h2>
 
-    <!-- Usability Testing -->
+    <!-- Usability Testing Approach -->
     <div class="subsection row-section">
       <div class="row align-items-center">
         <div class="col-md-6">
           <h3>Usability Testing Approach</h3>
           <p>
-            I conducted two testing rounds with 6 participants — 3 diners and 3 restaurant hosts. They explored key flows using mid- and high-fidelity Figma prototypes on mobile devices.
+            I collaborated with UX researchers and internal operators to run two feedback loops — one using a clickable Figma prototype, and another through a sandbox testing environment.
           </p>
           <p>
-            Tasks included finding a table, making edits, toggling between guest/host modes, and confirming bookings. I tracked hesitations, errors, and completion speed to identify friction points.
+            Participants were asked to complete tasks like finding high-priority issues, assigning them, and submitting resolutions. I observed hesitation, misclicks, and areas where system status wasn’t clear.
           </p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="img/tablefinder-testing.png" alt="Testing flow in Figma prototypes" class="img-fluid section-image section-image-large" />
+          <img src="img/amazon-testing.png" alt="Usability testing setup and notes" class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
@@ -269,16 +251,16 @@
         <div class="col-md-6">
           <h3>Key Feedback</h3>
           <ul>
-            <li>One-tap availability was loved, but users wanted visual confirmation (like animations or checkmarks).</li>
-            <li>Hosts asked for better labeling of walk-ins vs. reserved tables.</li>
-            <li>The calendar grid was preferred over a list view — especially for visualizing a full week.</li>
+            <li>Operators needed confirmation after submitting — visual feedback was too subtle.</li>
+            <li>Filters worked well, but some icons were unclear without labels.</li>
+            <li>Escalation logic wasn’t intuitive — users wanted clarity around what gets flagged and why.</li>
           </ul>
           <p>
-            These insights confirmed both guest-facing and staff-facing needs — and helped prioritize small but meaningful UI improvements.
+            These insights helped refine interaction patterns and improve task confidence across roles.
           </p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="img/tablefinder-feedback.png" alt="Annotated notes from usability feedback" class="img-fluid section-image section-image-large" />
+          <img src="img/amazon-feedback.png" alt="Annotated feedback notes from Amazon testers" class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
@@ -289,16 +271,16 @@
         <div class="col-md-6">
           <h3>What I Changed</h3>
           <ul>
-            <li>Integrated animated feedback for success states (e.g. checkmarks, toasts).</li>
-            <li>Refined table status labels and added icon distinctions for host dashboard.</li>
-            <li>Upgraded calendar to a grid layout with clear day/time hierarchy and tappable areas.</li>
+            <li>Added toast confirmations and icon animations for key task actions.</li>
+            <li>Implemented optional labels for key UI icons in mobile view.</li>
+            <li>Updated escalation logic to show tooltips and rationale for status transitions.</li>
           </ul>
           <p>
-            These changes reduced cognitive load, improved confidence, and enhanced usability across devices.
+            These changes led to reduced drop-off, quicker onboarding, and improved team satisfaction.
           </p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="img/tablefinder-iterations.png" alt="Side-by-side comparisons of UI before and after" class="img-fluid section-image section-image-large" />
+          <img src="img/amazon-iterations.png" alt="Before-and-after UI improvements based on testing" class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
@@ -317,14 +299,14 @@
         <div class="col-md-6">
           <h3>The Final Product</h3>
           <p>
-            TableFinder is a clean, mobile-first reservation app that makes it fast and frictionless to book a table — whether you're planning ahead or walking in. It serves both guests and hosts through an intuitive split-view structure and bold, accessible UI.
+            I delivered a modular, scalable internal tool designed to help Amazon operators address last-mile customer experience issues. The UI simplified escalation handling, enabled fast prioritization, and supported more transparent workflows across internal teams.
           </p>
           <p>
-            From tapping “Reserve” to managing capacity in real time, the final design reflects what real users asked for: less chaos, more clarity.
+            Through collaboration with senior designers, PMs, and operations managers, the final experience felt robust yet intuitive — even for new hires.
           </p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="img/tablefinder-final.png" alt="Final UI layout of TableFinder" class="img-fluid section-image section-image-large" />
+          <img src="img/amazon-finalproduct.png" alt="Final UI overview of Amazon internal tool" class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
@@ -335,16 +317,16 @@
         <div class="col-md-6">
           <h3>Results</h3>
           <ul>
-            <li>Users completed booking flows 30% faster after UI changes.</li>
-            <li>Usability scores jumped from 65 → 92 across iterations.</li>
-            <li>Feedback included: “This is actually fun to use,” and “Way easier than OpenTable.”</li>
+            <li>Reduced resolution times by streamlining ticket handoffs.</li>
+            <li>Improved operator satisfaction through UI clarity and action feedback.</li>
+            <li>Earned internal praise for "shipping fast and designing with empathy."</li>
           </ul>
           <p>
-            These outcomes validated my design decisions and confirmed real-world impact.
+            The tool helped internal teams triage customer pain points faster — keeping packages moving and customers informed.
           </p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="img/tablefinder-results.png" alt="Metrics and feedback quotes from users" class="img-fluid section-image section-image-large" />
+          <img src="img/amazon-results.png" alt="Key outcomes and success metrics" class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
@@ -355,14 +337,14 @@
         <div class="col-md-6">
           <h3>What I Learned</h3>
           <p>
-            TableFinder taught me to balance user needs from both ends of a service — diners and staff. I learned how even small UI refinements (like animations and calendar structure) make a huge difference.
+            Working at Amazon taught me to balance speed with rigor. I learned to collaborate across time zones, validate ideas quickly, and communicate clearly with engineers and PMs. Accessibility, logic, and documentation became second nature.
           </p>
           <p>
-            If I continued the project, I’d explore integrations with restaurant CRMs and real-time data dashboards for hosts.
+            If I continued the project, I’d explore audit trails, keyboard shortcuts, and dashboard-level analytics — all grounded in real operator needs.
           </p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="img/tablefinder-reflection.png" alt="Design process board for TableFinder" class="img-fluid section-image section-image-large" />
+          <img src="img/amazon-reflection.png" alt="UX process board and reflections" class="img-fluid section-image section-image-large" />
         </div>
       </div>
     </div>
