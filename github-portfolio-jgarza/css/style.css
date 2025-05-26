@@ -913,7 +913,7 @@ body.dark-mode h4 {
     z-index: 2;
   }
 
-  #case-hero {
+  #codecase-hero {
     background-image: url('../img/codebrewherobackgound.jpg');
     background-size: cover;
     background-position: center;
@@ -1181,3 +1181,14 @@ body nav li a.active {
   /* ===============================================
    End of CSS
    ================================================== */
+
+   #tablefinder-hero {
+  background-image: url('../img/tableherobackgroundsaturated.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  padding: 150px 0;
+  z-index: 1;
+  overflow: hidden;
+}
