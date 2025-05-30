@@ -878,7 +878,7 @@ body.dark-mode h4 {
    ================================================== */
 
    .case-hero {
-    background-image: url('../img/tableherobackgroundsaturated.jpg');
+    background-image: url();
     background-size: cover;
     background-position: center;
     position: relative;
@@ -914,7 +914,7 @@ body.dark-mode h4 {
   }
 
   #codecase-hero {
-    background-image: url('../img/codebrewherobackgound.jpg');
+    background-image: url();
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
